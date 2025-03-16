@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, sans-serif;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            height: 10vh;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            transition: background-color 0.5s ease-in-out;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: 0.5s ease-in-out ;
+        }
+        .navbar a:hover{
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .navlink{
+            display: flex;
+        }
+        .menu{
+            display: none;
+            font-size: none;
+            cursor: pointer;
+            color: white;
+        }
+        @media (max-width: 768px){
+            .navlink{
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 50px;
+                right: 20px;
+                background-color: #444;
+                border-radius: 5px;
+                width: 150px;
+            }
+            .navlink a{
+                padding: 10px 15px;
+                text-align: center;
+                display: block;
+            }
+            .menu{
+                display: block;
+            }
+            .navlink.active{
+                display: flex;
+            }
+            .content{
+                padding: 80px 20px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body background="image.png" style="background-size: cover;" text="white">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#Home">Logo</a>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">≡</div>
+        <div class="navlinks">
+        <a href="a_9.html">Home</a>
+        <a href="a_9 copy.html">About</a>
+        <a href="a_9 copy 2.html">Contact</a>
+        </div>
+    </nav>
+    <div id="#About" class="content"pading="80px 20px" text-align="center">
+        <h1>About us</h1>
+        <p> This website is about Space </p>
+    </div>
+</body>
+</html>
