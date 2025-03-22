@@ -81,14 +81,41 @@
         </div>
         <div class="menu-toggle" onclick="toggleMenu()">≡</div>
         <div class="navlinks">
-        <a href="a_9.html">Home</a>
-        <a href="a_9 copy.html">About</a>
-        <a href="a_9 copy 2.html">Contact</a>
-        </div>
+            <a href="a_9.html">contact</a>
+            <a href="a_9 copy.html">About</a>
+            <a href="a_9 copy 2.html">Home</a>
+            </div>
     </nav>
     <div id="#Contact" class="content" pading="80px 20px" text-align="center">
         <h1>Contact us</h1>
         <p> You can contact us at 1234567890 </p>
+    </div>
+    <div>
+        <h1> This is the contact page </h1>
+        <form>
+            <fieldset>
+                <legend>Contact us</legend>
+                <label>Name:</label>
+                <input type="text" name="name" id="name" required><br><br>
+                <label>Email:</label><br>
+                <input type="email" name="email" id="email" required><br><br>
+                <label>number:</label><br>
+                <input type="number" name="number" id="number" required><br><br>
+                <label>Password:</label><br>
+                <input type="password" name="password" id="password" required><br><br>
+                <label>gender</label><br>
+                <input type="radio" id="gender" name="gender" value="female">female<input><br>
+                <input type="radio" id="gender" name="gender" value="male">male<input><br><br>
+                <label>fav city</label><br>
+                <select name="city" id="city">
+                    <option value="delhi">Delhi</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="kolkata">Kolkata</option>
+                    <option value="chennai">Chennai</option>
+                </select><br><br>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
     </div>
 </body>
 </html>
